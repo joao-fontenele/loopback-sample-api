@@ -1,15 +1,16 @@
 const loopback = require('loopback');
 const boot = require('loopback-boot');
+const logger = require('./util/logger');
 
 const app = loopback();
 
 app.start = () => app.listen(() => {
   app.emit('started');
   const baseUrl = app.get('url').replace(/\/$/, '');
-  console.log('Web server listening at: %s', baseUrl);
+  logger.info(`Web server listening at: ${baseUrl}`);
   if (app.get('loopback-component-explorer')) {
     const explorerPath = app.get('loopback-component-explorer').mountPath;
-    console.log('Browse your REST API at %s%s', baseUrl, explorerPath);
+    logger.info(`Browse your REST API at ${baseUrl}${explorerPath}`);
   }
 });
 

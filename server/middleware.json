@@ -3,6 +3,7 @@
     "loopback#favicon": {}
   },
   "initial": {
+    "express-pino-logger": {},
     "compression": {},
     "cors": {
       "params": {
