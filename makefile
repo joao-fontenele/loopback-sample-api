@@ -5,4 +5,4 @@ build:
 
 start:
 	docker-compose up -d
-	docker logs -f --since 1h loopback-sample-api
+	docker logs -f --since 1h loopback-sample-api | node_modules/.bin/pino-pretty

@@ -14,10 +14,12 @@
   "dependencies": {
     "compression": "^1.0.3",
     "cors": "^2.5.2",
+    "express-pino-logger": "^4.0.0",
     "helmet": "^3.10.0",
     "loopback": "^3.22.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^6.2.0",
+    "pino": "^5.10.1",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^3.0.0"
   },
@@ -25,7 +27,8 @@
     "eslint": "^5.10.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "nodemon": "^1.18.8"
+    "nodemon": "^1.18.8",
+    "pino-pretty": "^2.5.0"
   },
   "repository": {
     "type": "",
