@@ -1,7 +1,7 @@
 .PHONY: build start
 
 build:
-	docker-compose run --rm app npm i
+	docker-compose run --rm app yarn
 
 start:
 	docker-compose up -d

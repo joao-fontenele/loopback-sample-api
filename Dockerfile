@@ -9,4 +9,4 @@ RUN mkdir -p $CODE
 
 WORKDIR $CODE
 
-CMD ["yarn", "start"]
+CMD ["yarn", "start:dev"]
