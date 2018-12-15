@@ -1,3 +1,4 @@
+require('dotenv').load();
 const loopback = require('loopback');
 const boot = require('loopback-boot');
 const logger = require('./util/logger');
