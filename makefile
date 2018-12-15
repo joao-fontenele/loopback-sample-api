@@ -1,8 +1,7 @@
-.PHONY: build start
+.PHONY: install start
 
-build:
+install:
 	docker-compose run --rm app yarn
 
 start:
-	docker-compose up -d
-	docker logs -f --since 1h loopback-sample-api | node_modules/.bin/pino-pretty
+	/bin/bash -c "start-dev.sh"
