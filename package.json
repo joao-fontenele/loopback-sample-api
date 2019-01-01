@@ -6,6 +6,7 @@
     "node": ">=10"
   },
   "scripts": {
+    "automigrate": "node server/scripts/migrations.js",
     "lint": "eslint .",
     "posttest": "npm run lint",
     "start": "node .",
@@ -17,9 +18,12 @@
     "dotenv": "^6.2.0",
     "express-pino-logger": "^4.0.0",
     "helmet": "^3.10.0",
+    "lodash": "^4.17.11",
     "loopback": "^3.22.0",
-    "loopback-boot": "^2.6.5",
+    "loopback-boot": "^2.27.1",
+    "loopback-cli": "^5.0.0",
     "loopback-component-explorer": "^6.2.0",
+    "loopback-connector-mysql": "^5.3.1",
     "pino": "^5.10.1",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^3.0.0"

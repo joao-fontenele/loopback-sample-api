@@ -1,0 +1,40 @@
+{
+  "name": "Product",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "details": {
+      "type": "object"
+    },
+    "isAvailable": {
+      "type": "boolean"
+    },
+    "tags": {
+      "type": [
+        "string"
+      ]
+    },
+    "price": {
+      "type": "number"
+    },
+    "status": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
