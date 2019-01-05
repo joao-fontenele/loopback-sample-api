@@ -26,3 +26,10 @@ services:
     environment:
       - MYSQL_DATABASE=datastore
       - MYSQL_ALLOW_EMPTY_PASSWORD=1
+
+  mongo:
+    container_name: mongo
+    image: mongo:4
+    volumes:
+      - .:/app
+      - ./data/mongo:/data/db
